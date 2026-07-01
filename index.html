@@ -143,7 +143,7 @@ input {
   padding: 60px 15px;
   border-radius: 20px;
   background-size: cover;
-  background-position: center;
+  background-position: center 70%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -162,7 +162,7 @@ input {
   position: absolute; 
   left: 0;
   right: 0;
-  top: 50%;
+  top: 83%;
   transform: translateY(-50%);
   width: 100%;
   text-align: center;
@@ -841,58 +841,36 @@ body {
 
 .mini-gallery {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
-    max-width: 550px;
-    margin: 30px auto 0;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    width: 100%;
+    max-width: 430px;
+    margin: 30px auto;
     padding: 0 15px;
 }
 
 .mini-gallery img {
+    display: block;
     width: 100%;
-    aspect-ratio: 1 / 1;
+    height: 180px;
     object-fit: cover;
     border-radius: 12px;
-    border: 3px solid #fff;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-.mini-gallery img:hover {
-    transform: scale(1.06);
-    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.25);
-}
-
-/* Tablet */
-
-@media (max-width: 768px) {
-    .mini-gallery {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 8px;
-        max-width: 95%;
-    }
-
-    .mini-gallery img {
-        border-radius: 10px;
-    }
+    border: 2px solid #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,.15);
 }
 
 /* Mobile */
-
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .mini-gallery {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 6px;
-        padding: 0 10px;
+        max-width: 100%;
+        padding: 0 12px;
+        gap: 8px;
     }
 
     .mini-gallery img {
-        border-radius: 8px;
-        border: 2px solid #fff;
+        height: 160px;
     }
 }
-
 </style>
 </head>
 
@@ -982,7 +960,7 @@ body {
   </div>
 </div>
 
-<div class="image-section fade" style="background-image: url('IMG_20260424_223448.jpeg'); display:flex; align-items:center; justify-content:center;margin-top: 100px;">
+<div class="image-section fade" style="background-image: url('Hands.jpg'); display:flex; align-items:center; justify-content:center;margin-top: 100px;">
   <h2>A Beginning to Forever 💖</h2>
 </div>
 
@@ -1027,6 +1005,7 @@ body {
     <img src="Mrg5.jpg" alt="">
     <img src="Mrg6.jpg" alt="">
     <img src="Mrg7.jpg" alt="">
+    <img src="Mrg8.jpg" alt="">
 </div>
 
 
