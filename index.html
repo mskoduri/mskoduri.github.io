@@ -823,7 +823,7 @@ body {
 
 .SaveDate{
   width: 100%;
-  max-width: 200px;
+  max-width: 300px;
   display: block;
   margin: 20px auto 0;
   border-radius: 12px;
@@ -832,11 +832,65 @@ body {
 
 .Date{
   width: 100%;
-  max-width: 170px;
+  max-width: 210px;
   display: block;
   margin: 20px auto 0;
   border-radius: 12px;
   object-fit: cover;
+}
+
+.mini-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    max-width: 550px;
+    margin: 30px auto 0;
+    padding: 0 15px;
+}
+
+.mini-gallery img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 3px solid #fff;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.mini-gallery img:hover {
+    transform: scale(1.06);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.25);
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+    .mini-gallery {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 8px;
+        max-width: 95%;
+    }
+
+    .mini-gallery img {
+        border-radius: 10px;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
+    .mini-gallery {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 6px;
+        padding: 0 10px;
+    }
+
+    .mini-gallery img {
+        border-radius: 8px;
+        border: 2px solid #fff;
+    }
 }
 
 </style>
@@ -887,7 +941,6 @@ body {
       Your presence will make our day truly special
     </p>
 
-
   </div>
 
   <div class="scroll-down" onclick="scrollDown()">
@@ -895,6 +948,16 @@ body {
   <div class="arrow"></div>
 </div>
 </section>
+
+<div class="mini-gallery">
+    <img src="1.jpg" alt="">
+    <img src="2.jpg" alt="">
+    <img src="3.jpg" alt="">
+    <img src="4.jpg" alt="">
+    <img src="5.jpg" alt="">
+    <img src="6.jpg" alt="">
+</div>
+
 
 <div class="fade">
   <img src="Countdown.png" class="event-count" alt="The Countdown" >
@@ -955,6 +1018,18 @@ body {
 
   </div>
 </section>
+
+<div class="mini-gallery">
+    <img src="Mrg1.jpg" alt="">
+    <img src="Mrg2.jpg" alt="">
+    <img src="Mrg3.jpg" alt="">
+    <img src="Mrg4.jpg" alt="">
+    <img src="Mrg5.jpg" alt="">
+    <img src="Mrg6.jpg" alt="">
+    <img src="Mrg7.jpg" alt="">
+</div>
+
+
 <section class="fade">
   <img
       src="SaveDate.png"
@@ -963,7 +1038,7 @@ body {
       <img
       src="Date.png"
       alt="Date"
-      class="SaveDate">
+      class="Date">
 </section>
 
 <section class="fade">
