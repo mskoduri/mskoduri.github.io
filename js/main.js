@@ -29,3 +29,7 @@ if ("scrollRestoration" in history) {
 window.addEventListener("load", () => {
     window.scrollTo(0, 0);
 });
+
+function toggleMenu() {
+    document.getElementById("mobileMenu").classList.toggle("active");
+}
