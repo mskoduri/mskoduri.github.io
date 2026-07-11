@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:title" content="Madhu ❤️ Madhavi Wedding Invitation">
 <meta property="og:description" content="Join us in celebrating our special day 💖 May 13, 2026">
-<meta property="og:image" content="https://mskoduri.github.io/MMwedding/preview.png">
+<meta property="og:image" content="https://mskoduri.github.io/MMwedding/images/preview.png">
 <meta property="og:url" content="https://mskoduri.github.io/MMwedding/">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
@@ -29,14 +29,7 @@ body {
 .bg {
   position: fixed;
   inset: 0;
-  background: url('360.webp') no-repeat center;
-  /* background:
-    linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.75)
-    ),
-    url('360.webp') no-repeat center; */
+  background: url('images/360.webp') no-repeat center;
   background-size: cover;
   filter: brightness(0.9) contrast(1.1);
   z-index: -1;
@@ -133,22 +126,34 @@ input {
   border: none;
 }
 
-.image-section {
-  width: 90%;
-  /* height: 60vh; */
-  min-height: 45vh;
-  /* margin: 30px auto; */
-  margin: 0 auto;
-  /* padding: 60px 0; */
-  padding: 60px 15px;
-  border-radius: 20px;
-  background-size: cover;
-  background-position: center 70%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
+.image-section{
+    position: relative;
+    width: 90%;
+    max-width: 450px;
+    margin: 60px auto;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.hands-img{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.image-section h2{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 80px;
+    width: 100%;
+    text-align: center;
+    background: rgba(255,255,255,.55);
+    color: #7a1f1f;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .image-section::after {
@@ -158,21 +163,6 @@ input {
   height: 100%;
 }
 
-.image-section h2 {
-  position: absolute; 
-  left: 0;
-  right: 0;
-  top: 83%;
-  transform: translateY(-50%);
-  width: 100%;
-  text-align: center;
-  background: rgba(255, 255, 255, 0.5);
-  padding: 8px 0;
-  color: #7a1f1f;
-  font-size: 16px;
-  letter-spacing: 1px;
-  /* font-weight: 500; */
-}
 .countdown-box {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -227,7 +217,7 @@ border: 2px solid #d4af37;
   content: "";
   position: absolute;
   inset: 0;
-  background: url('IMG_20260424_180515.jpeg') no-repeat center;
+  background: url('images/IMG_20260424_180515.jpeg') no-repeat center;
   background-size: cover;
   opacity: 0.3;
   z-index: 0;
@@ -845,14 +835,14 @@ body {
     gap: 10px;
     width: 100%;
     max-width: 430px;
-    margin: 30px auto;
+    margin: 70px auto 30px;   /* Increased top margin */
     padding: 0 15px;
 }
 
 .mini-gallery img {
     display: block;
     width: 100%;
-    height: 180px;
+    height: 200px;
     object-fit: cover;
     border-radius: 12px;
     border: 2px solid #fff;
@@ -880,22 +870,22 @@ body {
 
 <section id="welcome">
   <div class="welcome-content">
-    <img src="Ganesh.png" class="welcome-image">
-    <img src="MM.png"  class="names-img" alt="Madhu Madhavi"> 
-  <img src="20260429_123016.png" class="invite-text-img">
+    <img src="images/Ganesh.png" class="welcome-image">
+    <img src="images/MM.png"  class="names-img" alt="Madhu Madhavi"> 
+  <img src="images/20260429_123016.png" class="invite-text-img">
     
   <button onclick="openEnvelope()" class="invite-btn">
   <div class="envelope-wrapper">
-    <img src="Picsart_26-04-26_20-19-04-859.png" class="open_invite">
+    <img src="images/Picsart_26-04-26_20-19-04-859.png" class="open_invite">
    <div class="seal-wrapper">
-  <img src="Seal.png" class="seal-img seal-left">
-  <img src="Seal.png" class="seal-img seal-right">
+  <img src="images/Seal.png" class="seal-img seal-left">
+  <img src="images/Seal.png" class="seal-img seal-right">
   <span class="seal-text">OPEN</span>
 </div>
   </div>
 </button>
 
-    <img src="Picsart_26-04-26_19-44-44-981.png" class="knot"></img>
+    <img src="images/Picsart_26-04-26_19-44-44-981.png" class="knot"></img>
   </div>
 
 </section>
@@ -928,17 +918,17 @@ body {
 </section>
 
 <div class="mini-gallery">
-    <img src="1.jpg" alt="">
-    <img src="2.jpg" alt="">
-    <img src="3.jpg" alt="">
-    <img src="4.jpg" alt="">
-    <img src="5.jpg" alt="">
-    <img src="6.jpg" alt="">
+    <img src="images/1.jpg" alt="">
+    <img src="images/2.jpg" alt="">
+    <img src="images/3.jpg" alt="">
+    <img src="images/4.jpg" alt="">
+    <img src="images/5.jpg" alt="">
+    <img src="images/6.jpg" alt="">
 </div>
 
 
 <div class="fade">
-  <img src="Countdown.png" class="event-count" alt="The Countdown" >
+  <img src="images/Countdown.png" class="event-count" alt="The Countdown" >
 
   <div class="countdown-box">
     <div class="time">
@@ -960,17 +950,18 @@ body {
   </div>
 </div>
 
-<div class="image-section fade" style="background-image: url('Hands.jpg'); display:flex; align-items:center; justify-content:center;margin-top: 100px;">
-  <h2>A Beginning to Forever 💖</h2>
+<div class="image-section fade">
+    <img src="images/Hands.jpg" class="hands-img" alt="Hands">
+    <h2>A Beginning to Forever 💖</h2>
 </div>
 
 <section class="fade">
-  <img src="Celebrations.png" class="event-title-img" alt="The Celebrations" style="position: relative;right: 10px;margin-top: -130px;margin-bottom: -190px;">
+  <img src="images/Celebrations.png" class="event-title-img" alt="The Celebrations" style="position: relative;right: 10px;margin-top: -130px;margin-bottom: -190px;">
 
   <div class="event-container">
 
     <div class="event-card">
-      <h3 style="position:relative; right: 0.7em;"> <img src="Picsart.png" class="icon"> Haldi Ceremony</h3>
+      <h3 style="position:relative; right: 0.7em;"> <img src="images/Picsart.png" class="icon"> Haldi Ceremony</h3>
       <p>12th May 2026</p>
       <p>Hyderabad</p>
 
@@ -983,7 +974,7 @@ body {
 
 
     <div class="event-card">
-       <h3 style="position:relative; right: 1.5em;"> <img src="pngtree.png" class="icon" style="height: 2em;width: 54px;"> The Wedding </h3>
+       <h3 style="position:relative; right: 1.5em;"> <img src="images/pngtree.png" class="icon" style="height: 2em;width: 54px;"> The Wedding </h3>
       <p>13th May 2026 · 09:24 AM</p>
       <p>Celebrations Function Hall</p>
 
@@ -998,24 +989,24 @@ body {
 </section>
 
 <div class="mini-gallery">
-    <img src="Mrg1.jpg" alt="">
-    <img src="Mrg2.jpg" alt="">
-    <img src="Mrg3.jpg" alt="">
-    <img src="Mrg4.jpg" alt="">
-    <img src="Mrg5.jpg" alt="">
-    <img src="Mrg6.jpg" alt="">
-    <img src="Mrg7.jpg" alt="">
-    <img src="Mrg8.jpg" alt="">
+    <img src="images/Mrg1.jpg" alt="">
+    <img src="images/Mrg2.jpg" alt="">
+    <img src="images/Mrg3.jpg" alt="">
+    <img src="images/Mrg4.jpg" alt="">
+    <img src="images/Mrg5.jpg" alt="">
+    <img src="images/Mrg6.jpg" alt="">
+    <img src="images/Mrg7.jpg" alt="">
+    <img src="images/Mrg8.jpg" alt="">
 </div>
 
 
 <section class="fade">
   <img
-      src="SaveDate.png"
+      src="images/SaveDate.png"
       alt="SaveDate"
       class="SaveDate">
       <img
-      src="Date.png"
+      src="images/Date.png"
       alt="Date"
       class="Date">
 </section>
@@ -1053,7 +1044,7 @@ body {
     </h3>
 
     <img
-      src="Family.png"
+      src="images/Family.png"
       alt="Family"
       class="family-image"
     >
@@ -1068,7 +1059,7 @@ body {
 <section class="fade">
   <div class="card">
 <img
-      src="Confirm.png"
+      src="images/Confirm.png"
       alt="Confirm"
       class="confirm-presence">
     <input id="name" placeholder="Your Name">
