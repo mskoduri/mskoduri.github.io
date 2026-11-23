@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 880">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#17100c"/><stop offset=".55" stop-color="#4a2611"/><stop offset="1" stop-color="#170b06"/></linearGradient><linearGradient id="gold"><stop stop-color="#9d691c"/><stop offset=".5" stop-color="#f1d47d"/><stop offset="1" stop-color="#9d691c"/></linearGradient></defs>
+<rect x="8" y="8" width="504" height="864" rx="42" fill="url(#bg)" stroke="#d9b34e" stroke-width="3"/>
+<circle cx="260" cy="210" r="78" fill="none" stroke="#d9b34e" stroke-width="2" opacity=".65"/>
+<text x="260" y="230" text-anchor="middle" fill="#f1d47d" font-family="Georgia,serif" font-size="88">ॐ</text>
+<text x="260" y="370" text-anchor="middle" fill="#f1d47d" font-family="Georgia,serif" font-size="31" letter-spacing="2">MADHU ♥ MADHAVI</text>
+<text x="260" y="408" text-anchor="middle" fill="#fff8e8" font-family="Arial,sans-serif" font-size="14" letter-spacing="4">WEDDING INVITATION</text>
+<path d="M100 500h320" stroke="url(#gold)" stroke-width="2"/>
+<text x="260" y="548" text-anchor="middle" fill="#fff8e8" font-family="Georgia,serif" font-size="20">WITH THE BLESSINGS</text>
+<text x="260" y="580" text-anchor="middle" fill="#fff8e8" font-family="Georgia,serif" font-size="20">OF OUR FAMILIES</text>
+<rect x="170" y="640" width="180" height="56" rx="28" fill="url(#gold)"/><text x="260" y="675" text-anchor="middle" fill="#291207" font-family="Arial,sans-serif" font-size="15" font-weight="700">OPEN INVITATION</text>
+<path d="M70 770c80-45 110 35 190-15s125 30 190-15" fill="none" stroke="#d9b34e" stroke-width="5" opacity=".65"/>
+</svg>
